@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Server Programming</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1 th:text="'Hello ' + ${name}">Hello</h1>
+
+	<div th:if="${age} ge 18">Adult here!!!</div>
+	<div th:if="${age} lt 18"
+		th:text="${name} + ', you are ' + ${age} + ' too young'"></div>
+</body>
+</html>
