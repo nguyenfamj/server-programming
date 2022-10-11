@@ -2,10 +2,10 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/Users/nguyenfamj/Documents/Code/Server Programming/bookstore"/>
 			<item value="/Users/nguyenfamj/Documents/Code/Server Programming/customerlist"/>
 			<item value="/Users/nguyenfamj/Downloads/customerlist"/>
 			<item value="/Users/nguyenfamj/Documents/Code/Java/Server Programming/bookstore"/>
-			<item value="/Users/nguyenfamj/Documents/Code/Server Programming/bookstore"/>
 			<item value="/Users/nguyenfamj/Documents/Code/Server Programming/friend_list"/>
 			<item value="/Users/nguyenfamj/Documents/Code/Server Programming/handling_list"/>
 			<item value="/Users/nguyenfamj/Documents/Code/Server Programming/hello_thymeleaf"/>

@@ -20,6 +20,7 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/Users/nguyenfamj/Documents/Study/Server Programming/BookstoreRest.zip"/>
 			<item value="/Users/nguyenfamj/Documents/Study/Server Programming/Bookstore_OneToMany.zip"/>
 			<item value="/Users/nguyenfamj/Documents/Study/Server Programming/Databases_JPA_1.zip"/>
 			<item value="/Users/nguyenfamj/Documents/Study/Server Programming/Model_View.zip"/>
