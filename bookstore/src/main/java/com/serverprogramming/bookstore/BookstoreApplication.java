@@ -12,6 +12,8 @@ import com.serverprogramming.bookstore.domain.Book;
 import com.serverprogramming.bookstore.domain.BookRepository;
 import com.serverprogramming.bookstore.domain.Category;
 import com.serverprogramming.bookstore.domain.CategoryRepository;
+import com.serverprogramming.bookstore.domain.User;
+import com.serverprogramming.bookstore.domain.UserRepository;
 
 @SpringBootApplication
 public class BookstoreApplication {
@@ -22,7 +24,8 @@ public class BookstoreApplication {
 	}
 
 	@Bean
-	public CommandLineRunner bookDemo(BookRepository bookRepository, CategoryRepository categoryRepository) {
+	public CommandLineRunner bookDemo(BookRepository bookRepository, CategoryRepository categoryRepository,
+			UserRepository userRepository) {
 		return (args) -> {
 			log.info("save new book demo");
 			bookRepository.save(new Book("The Intelligent Investor", "Benjamin Graham", 2009, "9780061745171", 50.00));
@@ -41,6 +44,15 @@ public class BookstoreApplication {
 			log.info("fetch all category");
 			for (Category category : categoryRepository.findAll()) {
 				log.info(category.toString());
+			}
+
+			userRepository.save(new User("user1", "$2a$06$3jYRJrg0ghaaypjZ/.g4SethoeA51ph3UD4kZi9oPkeMTpjKU5uo6",
+					"user1@gmail.com", "USER"));
+
+			userRepository.save(new User("admin1", "$2a$10$0MMwY.IQqpsVc1jC8u7IJ.2rT8b0Cd3b3sfIBGV2zfgnPGtT4r0.C", "admin1@gmail.com", "ADMIN"));
+			log.info("fetch all users");
+			for (User user : userRepository.findAll()) {
+				log.info(user.toString());
 			}
 
 		};
